@@ -1,0 +1,117 @@
+@black: #333;
+@white: #fff;
+@grey: #999;
+@blue: #3584a0;
+@orange: orange;
+
+@sansFontFamily: sans-serif;
+
+body {
+  background-color: @white;
+  color: @black;
+  font-family: @sansFontFamily;
+  line-height: 1.4;
+  padding: 40px;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+
+  .point {
+    width: 4px;
+    height: 4px;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 2px;
+
+    &.centre {
+      top: 248px;
+      left: 248px;
+      background-color: @black;
+    }
+
+    &.circle {
+      animation: moveAroundCircle 4s linear infinite;
+      top: 106px;
+      left: 250px;
+      transform-origin: 51% 146px;
+      background-color: blue;
+    }
+
+    &.square {
+      animation: moveAroundSquare 4s linear infinite;
+      top:149px;
+      left: 149px;
+      background-color: red;
+    }
+  }
+
+  .shape {
+    border: 2px solid @grey;
+    position: absolute;
+    animation: fadeIn 18s linear infinite;
+  }
+  .shape.square {
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: 150px;
+  }
+  .shape.circle {
+    width: 286px;
+    height: 286px;
+    top: 107px;
+    left: 107px;
+    border-radius: 143px;
+  }
+}
+
+@keyframes moveAroundCircle {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+
+@keyframes moveAroundSquare {
+  from {
+    top:149px;
+    left: 149px;
+  }
+  25% {
+    top: 149px;
+    left: 351px;
+  }
+  50% {
+    top: 351px;
+    left: 351px;
+  }
+  75% {
+    top: 351px;
+    left: 149px;
+  }
+  to {
+    top:149px;
+    left: 149px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
