@@ -6,8 +6,10 @@ These include:
 
 - [The Illusory Contoured Tilting Pyramid] by Pietro Guardani & Luciano Gamberini from the University of Padova
 - [The Mutually Interfering Shapes Illusion] by Maarten Wijntjes, Robert Volcic & Tomas Knapen from Utrecht University
-- [Lucy in the Sky] by Arthur Shapiro & Justin Charles
+- A variation of [Lucy in the Sky] by Arthur Shapiro & Justin Charles
+- [Grouping by Contrast] by Erica Dixon, Arthur Shapiro & Kai Hamburger
 
   [The Illusory Contoured Tilting Pyramid]: http://illusionoftheyear.com/2007/the-illusory-contoured-tilting-pyramid-2/
   [The Mutually Interfering Shapes Illusion]: http://illusionoftheyear.com/2008/the-mutually-interfering-shapes-illusion-the-misillusion/
   [Lucy in the Sky]: http://illusionoftheyear.com/2005/motion-illusion-building-blocks/
+  [Grouping by Contrast]: http://illusionoftheyear.com/2011/grouping-by-contrast/

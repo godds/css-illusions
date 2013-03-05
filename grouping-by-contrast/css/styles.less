@@ -1,0 +1,62 @@
+@black: #000;
+@white: #fff;
+@lightGrey: #ccc;
+@yellow: #fff86f;
+@lightGreen: #d6f0b2;
+@darkGreen: #2d4731;
+
+@sansFontFamily: sans-serif;
+
+body {
+  background-color: @white;
+  color: @black;
+  font-family: @sansFontFamily;
+  line-height: 1.4;
+  padding: 40px;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(left, @black 0%, @black 48%, @yellow 52%, @yellow 100%);
+
+  &:hover {
+    background: @lightGrey;
+  }
+
+  .dot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: @lightGreen;
+
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+
+    animation: mutateColour 0.8s linear infinite alternate;
+    top: 40px;
+    left: 80px;
+    &:nth-child(even) {
+      top: 180px;
+      animation-delay: 0.8s;
+    }
+    &:nth-child(n+3) {
+      left: auto;
+      right: 80px;
+    }
+  }
+}
+
+@keyframes mutateColour {
+  from {
+    background-color: @lightGreen;
+  }
+  to {
+    background-color: @darkGreen;
+  }
+}
