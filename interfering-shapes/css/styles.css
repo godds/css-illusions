@@ -1,0 +1,100 @@
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 40px;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: #cccccc;
+}
+.container .point {
+  width: 4px;
+  height: 4px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 50%;
+}
+.container .point.centre {
+  top: 248px;
+  left: 248px;
+  background-color: #333333;
+}
+.container .point.circle {
+  animation: moveAroundCircle 4s linear infinite;
+  top: 106px;
+  left: 250px;
+  transform-origin: 51% 146px;
+  background-color: #0000ff;
+}
+.container .point.square {
+  animation: moveAroundSquare 4s linear infinite;
+  top: 149px;
+  left: 149px;
+  background-color: #ff0000;
+}
+.container .shape {
+  border: 2px solid #999999;
+  position: absolute;
+  animation: fadeIn 18s linear infinite;
+}
+.container .shape.square {
+  width: 200px;
+  height: 200px;
+  top: 150px;
+  left: 150px;
+}
+.container .shape.circle {
+  width: 286px;
+  height: 286px;
+  top: 107px;
+  left: 107px;
+  border-radius: 50%;
+}
+@keyframes moveAroundCircle {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+@keyframes moveAroundSquare {
+  from {
+    top: 149px;
+    left: 149px;
+  }
+  25% {
+    top: 149px;
+    left: 351px;
+  }
+  50% {
+    top: 351px;
+    left: 351px;
+  }
+  75% {
+    top: 351px;
+    left: 149px;
+  }
+  to {
+    top: 149px;
+    left: 149px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

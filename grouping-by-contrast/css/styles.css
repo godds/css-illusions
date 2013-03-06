@@ -1,0 +1,47 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 40px;
+}
+.container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(left, #000000 0%, #000000 48%, #fff86f 52%, #fff86f 100%);
+}
+.container:hover {
+  background: #cccccc;
+}
+.container .dot {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #d6f0b2;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  animation: mutateColour 0.8s linear infinite alternate;
+  top: 40px;
+  left: 80px;
+}
+.container .dot:nth-child(even) {
+  top: 180px;
+  animation-delay: 0.8s;
+}
+.container .dot:nth-child(n+3) {
+  left: auto;
+  right: 80px;
+}
+@keyframes mutateColour {
+  from {
+    background-color: #d6f0b2;
+  }
+  to {
+    background-color: #2d4731;
+  }
+}
