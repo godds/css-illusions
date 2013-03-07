@@ -9,6 +9,7 @@ body {
   width: 500px;
   height: 300px;
   position: relative;
+  background: -moz-linear-gradient(left, #000000 0%, #000000 48%, #fff86f 52%, #fff86f 100%);
   background: linear-gradient(left, #000000 0%, #000000 48%, #fff86f 52%, #fff86f 100%);
 }
 .container:hover {
