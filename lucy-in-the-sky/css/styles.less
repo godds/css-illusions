@@ -14,8 +14,8 @@ body {
 }
 
 .diamondPosition (@index) {
-  @degs: 45 * (@index);
-  transform: rotate(~"@{degs}deg") translateY(-130px) scaleY(0.5) rotate(45deg);
+  @degs: (45 * @index);
+  transform: rotate(@degs) translateY(-130px) scaleY(0.5) rotate(45deg);
 }
 .diamondAnimation (@delay) {
   animation: colourChange 1s linear @delay infinite alternate;

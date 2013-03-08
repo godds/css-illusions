@@ -23,35 +23,35 @@ body {
   border-bottom: 3px solid #999999;
 }
 .container .diamond:nth-child(1) {
-  transform: rotate(0deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(0) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear 0s infinite alternate;
 }
 .container .diamond:nth-child(2) {
-  transform: rotate(45deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(45) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear 0.2s infinite alternate;
 }
 .container .diamond:nth-child(3) {
-  transform: rotate(90deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(90) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear 0.4s infinite alternate;
 }
 .container .diamond:nth-child(4) {
-  transform: rotate(135deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(135) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear 0.6s infinite alternate;
 }
 .container .diamond:nth-child(5) {
-  transform: rotate(180deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(180) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear 1s infinite alternate;
 }
 .container .diamond:nth-child(6) {
-  transform: rotate(225deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(225) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear -0.8s infinite alternate;
 }
 .container .diamond:nth-child(7) {
-  transform: rotate(270deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(270) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear -0.6s infinite alternate;
 }
 .container .diamond:nth-child(8) {
-  transform: rotate(315deg) translateY(-130px) scaleY(0.5) rotate(45deg);
+  transform: rotate(315) translateY(-130px) scaleY(0.5) rotate(45deg);
   animation: colourChange 1s linear -0.4s infinite alternate;
 }
 @keyframes colourChange {
