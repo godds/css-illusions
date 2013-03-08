@@ -1,0 +1,97 @@
+@black: #333;
+@white: #fff;
+@lightGrey: #ccc;
+@blue: #162EAE;
+@yellow: #FFB600;
+
+@square-size: 240px;
+@lung-size: 280px;
+@container-size: 500px;
+
+@sansFontFamily: sans-serif;
+
+body {
+  background-color: @white;
+  color: @black;
+  font-family: @sansFontFamily;
+  line-height: 1.4;
+  padding: 40px;
+}
+
+.container {
+  width: @container-size;
+  height: @container-size;
+  position: relative;
+  background-color: @white;
+  
+  .square {
+    position: absolute;
+  }
+  
+  .grid {
+    .square {
+      background-color: @yellow;
+      z-index: 2;
+      animation: fade 8s linear infinite;
+      width: @square-size;
+      height: @square-size;
+    }
+    
+    .topleft {
+      top: 0px;
+      left: 0px;
+    }
+    
+    .topright {
+      top: 0px;
+      left: @container-size - @square-size;
+    }
+    
+    .bottomleft {
+      top: @container-size - @square-size;
+      left: 0px;
+    }
+    
+    .bottomright {
+      top: @container-size - @square-size;
+      left: @container-size - @square-size;
+    }
+  }
+  
+  .lung {
+    animation: rotate 8s linear infinite;
+    background-color: @blue;
+    top: (@container-size / 2) - (@lung-size / 2);
+    left: (@container-size / 2) - (@lung-size / 2);
+    z-index: 1;
+    width: @lung-size;
+    height: @lung-size;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  
+  60% {
+    opacity: 1;
+  }
+  
+  90% {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

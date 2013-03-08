@@ -1,0 +1,70 @@
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 40px;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: #ffffff;
+}
+.container .square {
+  position: absolute;
+}
+.container .grid .square {
+  background-color: #ffb600;
+  z-index: 2;
+  animation: fade 8s linear infinite;
+  width: 240px;
+  height: 240px;
+}
+.container .grid .topleft {
+  top: 0px;
+  left: 0px;
+}
+.container .grid .topright {
+  top: 0px;
+  left: 260px;
+}
+.container .grid .bottomleft {
+  top: 260px;
+  left: 0px;
+}
+.container .grid .bottomright {
+  top: 260px;
+  left: 260px;
+}
+.container .lung {
+  animation: rotate 8s linear infinite;
+  background-color: #162eae;
+  top: 110px;
+  left: 110px;
+  z-index: 1;
+  width: 280px;
+  height: 280px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
